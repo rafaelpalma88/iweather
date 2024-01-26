@@ -1,4 +1,4 @@
-import { Input } from '../'
+import { Input } from '@components/Input'
 import { render, screen } from '@testing-library/react-native'
 
 describe('Component: Input', () => {
@@ -12,8 +12,6 @@ describe('Component: Input', () => {
     render(<Input isLoading />)
     const activityIndicator = screen.queryByTestId('activity-indicator')
     expect(activityIndicator).toBeTruthy()
-
   })
-
   
 })

@@ -28,6 +28,7 @@
     },
     "experiments": {
       "tsconfigPaths": true
-    }
+    },
+    "jsEngine": "hermes"
   }
 }
