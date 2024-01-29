@@ -9,6 +9,7 @@ interface Props {
 }
 
 export function NextDays({ data }: Props) {
+  console.log('DATA NEXTDAYS', data)
   return (
     <View style={styles.container}>
       {
