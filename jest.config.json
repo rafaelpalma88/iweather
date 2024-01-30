@@ -11,5 +11,20 @@
   "setupFiles": [
     "./__tests__/mocks/libs/async-storage.js",
     "./__tests__/mocks/libs/react-native-safe-area-context.js"
-  ]
+  ],
+  "collectCoverageFrom": [
+    "./src/**/*.{ts,tsx}"
+  ],
+  "coveragePathIgnorePatterns": [
+    "./src/@types",
+    "./src/styles",
+    "./src/**/styles.ts",
+    "./__tests__/coverage"
+  ],
+  "testPathIgnorePatterns": [
+    "./__tests__/mocks",
+    "./__tests__/utils",
+    "/__tests__/coverage"
+  ],
+  "coverageDirectory": "./__tests__/coverage"
 }
