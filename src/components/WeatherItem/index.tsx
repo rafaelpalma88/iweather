@@ -11,8 +11,12 @@ type Props = {
 }
 
 export function WeatherItem({ icon: Icon, title, value, isLast = false }: Props) {
+  console.log('WeatherItem isLast', isLast)
+  console.log('WeatherItem title', title)
+  console.log('WeatherItem value', value)
+  console.log('WeatherItem Icon', Icon)
   return (
-    <View style={[styles.container, !isLast && styles.borderBottom]}>
+    <View style={[styles.container, !isLast && styles.borderBottom]} testID="view-container">
       <Icon width={24} height={24} />
 
       <Text style={styles.title}>
