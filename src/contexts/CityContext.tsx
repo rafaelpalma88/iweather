@@ -20,7 +20,6 @@ export function CityProvider({ children }: CityContextProviderProps) {
   const [city, setCity] = useState<CityProps | null>(null);
 
   async function handleChanceCity(selectedCity: CityProps) {
-    console.log('selectedCity', selectedCity)
     setCityIsLoading(true);
 
     await saveStorageCity(selectedCity);

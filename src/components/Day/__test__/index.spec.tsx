@@ -16,7 +16,6 @@ describe('Component: Day', () => {
     }
 
     render(<Day data={mock} />)
-    screen.debug()
 
     const dayOfTheWeekText = screen.getByText('sáb')
     expect(dayOfTheWeekText).toBeTruthy()

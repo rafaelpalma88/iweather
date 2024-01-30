@@ -19,8 +19,6 @@ describe("Routes", () => {
 
     const cityMock = { id: "3448300", latitude: -23.5292, longitude: -47.1353, name: "São Roque, BR"}
 
-    screen.debug()
-
     await saveStorageCity(cityMock)
 
     await render(<Routes />)
