@@ -22,6 +22,7 @@ export function SelectList(props: Props) {
         onChangeText={props.onChange}
         isLoading={props.isLoading}
         value={props.value}
+        testID="search-input"
       />
 
       <View style={styles.options} testID='options'>
